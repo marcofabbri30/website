@@ -8,7 +8,7 @@
                     Marco Fabbri</a>
                 <!-- <div class="d-none d-md-block"> -->
                 <div>
-                    <ul class="nav nav-pills">
+                    <ul class="nav ">
                         <li class="nav-item"><a href="#heroSection" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#aboutMeSection" class="nav-link">About me</a></li>
                         <li class="nav-item"><a href="#servicesSection" class="nav-link">Services</a></li>
@@ -49,6 +49,12 @@
   color:white
 }
 
+.nav-link{
+    color: grey !important
+}
+.active {
+    color:white !important
+}
 /* .test{
   color: black !important
 } */
@@ -78,11 +84,13 @@ window.onscroll = function() {myFunction()};
 
 function myFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header-bar").classList.remove("bg-transparent");
     document.getElementById("header-bar").classList.add("bg-dark");
-    document.getElementById("testId").classList.add("test");
+    // document.getElementById("testId").classList.add("test");
   } else {
     document.getElementById("header-bar").classList.remove("bg-dark");
-    document.getElementById("testId").classList.remove("test");
+    document.getElementById("header-bar").classList.add("bg-transparent");
+    // document.getElementById("testId").classList.remove("test");
   }
 }
 

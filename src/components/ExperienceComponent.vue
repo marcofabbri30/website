@@ -264,6 +264,25 @@ export default {
   );
 }
 
+.gradient-custom {
+  /* fallback for old browsers */
+  background: red;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 0, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 0, 1)
+  );
+}
+
 .gradient-custom-4 {
   /* fallback for old browsers */
   background: #f093fb;
